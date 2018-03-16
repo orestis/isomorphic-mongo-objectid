@@ -10,9 +10,8 @@
     'use strict';
 
     /*
-     * Refactored version of code provided by:
-     *  https://github.com/dreampulse/ObjectId.js - Jonathan Häberle (jonathan.haeberle@gmail.com)
-     *  - Justin Dearing (zippy1981@gmail.com)
+     * Refactored version of source by Jonathan Häberle (jonathan.haeberle@gmail.com)
+     * https://github.com/dreampulse/ObjectId.js
      */
 
     var _increment = 0;
@@ -40,7 +39,14 @@
 
         var args = arguments;
 
-        if (!(this instanceof ObjectID)) return new ObjectID();
+        if (!(this instanceof ObjectID)) {
+            if (args.length > 0) {
+                return new ObjectID(args[0], args[1], args[2], args[3]);
+            }
+            else {
+                return new ObjectID();
+            }
+        }
 
         if (typeof args[0] === 'object') {
             this.timestamp = args[0].timestamp;
