@@ -57,7 +57,7 @@ npm run build
 
 ## Star the repo
 
-If you find this useful, star the repo, it's super motivating :)
+If you find this useful, star the repo :)
 
 ## Bugs
 
