@@ -15,13 +15,21 @@ A 0.7k pure JavaScript implementation of mongo **ObjectID** for the client _(bro
 Copy [isomorphic-mongo-objectid.min.js](dist/isomorphic-mongo-objectid.min.js) into your page and add a script tag:
 
 ```html
-<script src="js/isomorphic-mongo-objectid.min.js"></script>
+<script src="isomorphic-mongo-objectid.min.js"></script>
 ```
 
 ### Server-side
 
+Install via npm:
+
 ```bash
 npm install --save isomorphic-mongo-objectid
+```
+
+Require in your module:
+
+```js
+var ObjectID = require('isomorphic-mongo-objectid');
 ```
 
 ## Usage
