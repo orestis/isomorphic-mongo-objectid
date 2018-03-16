@@ -28,8 +28,9 @@ npm install --save isomorphic-mongo-objectid
 
 ```js
 ObjectID(); // returns 5aab1a1a5e756f5b6d000001
-ObjectID('5aab1a1a5e756f5b6d000001').getDate() // returns Fri Mar 16 2018 01:12:58 GMT+0000 (GMT)
-ObjectID('5aab1a1a5e756f5b6d000001').toArray() // returns [90, 171, 26, 26, 94, 117, 111, 91, 109, 0, 0, 1]
+ObjectID('5aab1a1a5e756f5b6d000001').getDate(); // returns Fri Mar 16 2018 01:12:58 GMT+0000 (GMT)
+ObjectID('5aab1a1a5e756f5b6d000001').toArray(); // returns [90, 171, 26, 26, 94, 117, 111, 91, 109, 0, 0, 1]
+ObjectID(0, 0, 0, 0x00ffffff); // returns 000000000000000000ffffff
 ```
 
 ## Unit Tests
