@@ -5,7 +5,7 @@
  * @author John Doherty <www.johndoherty.info>
  * @license MIT
  */
-(function (window) {
+(function () {
 
     'use strict';
 
@@ -103,7 +103,7 @@
     if (typeof module !== 'undefined') {
         module.exports = ObjectID;
     }
-    else if (window) {
+    else {
         window.ObjectID = ObjectID;
     }
 
