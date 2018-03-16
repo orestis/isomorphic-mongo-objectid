@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-mongo-objectid",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Pure JavaScript implementation of mongo ObjectID for the client and server",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,14 @@
     "type": "git",
     "url": "git+https://github.com/john-doherty/isomorphic-mongo-objectid.git"
   },
+  "keywords": [
+    "mongo",
+    "ObjectID",
+    "ObjectId",
+    "javascript",
+    "browser",
+    "node"
+  ],
   "devDependencies": {
     "del": "2.2.2",
     "eslint": "^3.19.0",
