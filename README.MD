@@ -58,7 +58,7 @@ If you find this useful, star the repo, it's super motivating :)
 
 ## Bugs
 
-Open a ticket
+[Open a ticket](https://github.com/john-doherty/isomorphic-mongo-objectid/issues)
 
 ## History
 
