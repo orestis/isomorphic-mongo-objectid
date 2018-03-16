@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-mongo-objectid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pure JavaScript implementation of mongo ObjectID for the client and server",
   "main": "index.js",
   "scripts": {
