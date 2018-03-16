@@ -15,21 +15,27 @@
      *  - Justin Dearing (zippy1981@gmail.com)
      */
 
-    var increment = 0;
-    var pid = Math.floor(Math.random() * (32767));
-    var machine = Math.floor(Math.random() * (16777216));
+    var _increment = 0;
+    var _pid = Math.floor(Math.random() * (32767));
+    var _machine = Math.floor(Math.random() * (16777216));
 
-    if (window && window.localStorage) {
+    if (typeof window !== 'undefined') {
 
-        var mongoMachineId = parseInt(localStorage.mongoMachineId, 10);
+        var storage = window.localStorage;
+
+        var mongoMachineId = parseInt(storage.mongoMachineId, 10);
 
         if (mongoMachineId >= 0 && mongoMachineId <= 16777215) {
-            machine = Math.floor(localStorage.mongoMachineId);
+            _machine = Math.floor(storage.mongoMachineId);
         }
 
-        localStorage.mongoMachineId = machine;
+        storage.mongoMachineId = _machine;
     }
 
+    /**
+     * Creates a new mongo db style ObjectID
+     * @returns {ObjectID} instance of ObjectID
+     */
     function ObjectID() {
 
         var args = arguments;
@@ -56,11 +62,11 @@
         }
         else {
             this.timestamp = Math.floor(new Date().valueOf() / 1000);
-            this.machine = machine;
-            this.pid = pid;
-            this.increment = increment++;
-            if (increment > 0xffffff) {
-                increment = 0;
+            this.machine = _machine;
+            this.pid = _pid;
+            this.increment = _increment++;
+            if (_increment > 0xffffff) {
+                _increment = 0;
             }
         }
     }
@@ -94,10 +100,10 @@
         ].join('');
     };
 
-    if (window === undefined) {
+    if (typeof module !== 'undefined') {
         module.exports = ObjectID;
     }
-    else {
+    else if (window) {
         window.ObjectID = ObjectID;
     }
 
