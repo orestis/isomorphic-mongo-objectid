@@ -41,7 +41,7 @@ ObjectID('5aab1a1a5e756f5b6d000001').toArray(); // returns [90, 171, 26, 26, 94,
 ObjectID(0, 0, 0, 0x00ffffff); // returns 000000000000000000ffffff
 ```
 
-## Unit Tests
+## Unit tests
 
 1. Checkout using `git clone https://github.com/john-doherty/isomorphic-mongo-objectid`
 2. Navigate into project folder `cd isomorphic-mongo-objectid`
@@ -56,17 +56,14 @@ ObjectID(0, 0, 0, 0x00ffffff); // returns 000000000000000000ffffff
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
-## Update Minified Version
+## Update .min version
 
-You can generate a new _.min.js_ file by updating the version number in the [package.json](package.json) file and executing:
-
-```bash
-npm run build
-```
-
-## Star the repo
-
-If you find this useful, star the repo :)
+1. Checkout using `git clone https://github.com/john-doherty/isomorphic-mongo-objectid`
+2. Navigate into project folder `cd isomorphic-mongo-objectid`
+3. Install dependencies `npm install`
+4. Make the relevant changes
+5. Updated `version` number in `package.json`
+6. Run `npm run build` to generate a new [isomorphic-mongo-objectid.min.js](dist/isomorphic-mongo-objectid.min.js) file
 
 ## Bugs
 
