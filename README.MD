@@ -1,12 +1,13 @@
 # isomorphic-mongo-objectid
 
 [![Shippable branch](https://img.shields.io/shippable/5aab0aab1495e11600ca5c7b/master.svg)](https://app.shippable.com/projects/5aab0aab1495e11600ca5c7b)
+[![npm](https://img.shields.io/npm/dt/isomorphic-mongo-objectid.svg)](https://www.npmjs.com/package/isomorphic-mongo-objectid)
 [![Linked In](https://img.shields.io/badge/Linked-In-blue.svg)](https://www.linkedin.com/in/john-i-doherty) [![Twitter Follow](https://img.shields.io/twitter/follow/MrJohnDoherty.svg?style=social&label=Twitter&style=plastic)](https://twitter.com/MrJohnDoherty)
 
 [twitter-image]:https://img.shields.io/twitter/follow/mrJohnDoherty.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/mrJohnDoherty
 
-A 0.7k pure JavaScript implementation of mongo **ObjectID** for the client _(browser)_ and server _(nodejs)_. A machine id is created for each client and persistent across a single domain using the [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+A 0.7k pure JavaScript implementation of mongo **ObjectID** for the client _(browser)_ and server _(nodejs)_. A machine id is created for each client and persistent across a single domain using [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ## Installation
 
