@@ -41,14 +41,9 @@ ObjectID('5aab1a1a5e756f5b6d000001').toArray(); // returns [90, 171, 26, 26, 94,
 ObjectID(0, 0, 0, 0x00ffffff); // returns 000000000000000000ffffff
 ```
 
-## Unit tests
-
-1. Checkout using `git clone https://github.com/john-doherty/isomorphic-mongo-objectid`
-2. Navigate into project folder `cd isomorphic-mongo-objectid`
-3. Install dependencies `npm install`
-4. Run the tests `npm test`
-
 ## Contributing
+
+### Checkout the project
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -56,7 +51,14 @@ ObjectID(0, 0, 0, 0x00ffffff); // returns 000000000000000000ffffff
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
-## Update .min version
+### Run unit tests
+
+1. Checkout using `git clone https://github.com/john-doherty/isomorphic-mongo-objectid`
+2. Navigate into project folder `cd isomorphic-mongo-objectid`
+3. Install dependencies `npm install`
+4. Run the tests `npm test`
+
+### Update .min version
 
 1. Checkout using `git clone https://github.com/john-doherty/isomorphic-mongo-objectid`
 2. Navigate into project folder `cd isomorphic-mongo-objectid`
