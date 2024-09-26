@@ -14,7 +14,7 @@
      * https://github.com/dreampulse/ObjectId.js
      */
 
-    var _increment = 0;
+    var _increment = Math.floor(Math.random() * (0xffffff));
     var _pid = Math.floor(Math.random() * (32767));
     var _machine = Math.floor(Math.random() * (16777216));
 
